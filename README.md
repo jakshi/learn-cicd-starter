@@ -10,6 +10,8 @@ Use this project to practice small CI/CD workflow changes in a lightweight Go ap
 
 Make sure you're on Go version 1.22+.
 
+Before pushing changes, run the local test suite with `go test ./...`.
+
 Create a `.env` file in the root of the project with the following contents:
 
 ```bash
