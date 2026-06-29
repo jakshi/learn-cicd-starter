@@ -24,7 +24,7 @@ jobs:
       - name: Lint
         uses: dominikh/staticcheck-action@v1
         with:
-          version: "1.26.0"
+          version: "latest"
 
   tests:
     name: Tests
