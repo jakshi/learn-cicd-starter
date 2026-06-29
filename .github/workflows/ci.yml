@@ -22,7 +22,7 @@ jobs:
         run: test -z $(go fmt ./...)
       
       - name: Lint
-      - uses: dominikh/staticcheck-action@v1
+        uses: dominikh/staticcheck-action@v1
         with:
           version: "1.26.0"
 
