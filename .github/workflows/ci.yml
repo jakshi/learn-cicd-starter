@@ -20,6 +20,11 @@ jobs:
 
       - name: Style
         run: test -z $(go fmt ./...)
+      
+      - name: Lint
+      - uses: dominikh/staticcheck-action@v1
+        with:
+          version: "1.26.0"
 
   tests:
     name: Tests
