@@ -41,3 +41,8 @@ jobs:
 
       - name: Run tests
         run: go test ./... -cover
+
+      - name: Run security tests
+        uses: securego/gosec@master
+        with:
+          args: ./...
