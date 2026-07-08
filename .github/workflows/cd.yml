@@ -21,8 +21,11 @@ jobs:
 
       - name: Build app
         run: ./scripts/buildprod.sh
+      
+      - name: Install goose
+        run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
-      - name: DB migration
+      - name: Run DB migration
         run: ./scripts/migrateup.sh 
 
       - name: Authenticate to Google Cloud
